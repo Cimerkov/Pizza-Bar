@@ -10,6 +10,7 @@
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
 
     <!-- Custom CSS -->
     <link href="..//pizza bar/assets/css/style.css" rel="stylesheet">
@@ -18,13 +19,13 @@
 
 <body>
 
-      <!-- Navbar -->
-      
-    <nav class="bg-neutral-800">
+    <!-- Navbar -->
+
+    <nav class="bg-neutral-800 ">
 
         <div class="container flex flex-wrap items-center justify-between mx-auto">
 
-            <a href="#">
+            <a href="#home">
                 <img class="h-14 flex items-center flex-shrink-0 text-white mr-6 pl-10 lg:pl-0"
                     src="./assets/images/logo.png" alt="Pizza Bar Logo">
             </a>
@@ -34,7 +35,7 @@
                 <ul
                     class=" flex flex-col p-4 mt-4 text-white  rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
                     <li>
-                        <a href="#" class="hover:text-amber-200">Home</a>
+                        <a href="#home" class="hover:text-amber-200">Home</a>
                     </li>
                     <li>
                         <a href="#" class="hover:text-amber-200">About</a>
@@ -56,7 +57,64 @@
     </nav>
 
 
+    <section id="home" class="items-center justify-center bg-auto bg-center"
+        style="background-image: url(../Pizza-Bar/bg.jpg); height: 550px;">
+        <div class="overflow-hidden relative w-full max-w-lg mx-auto sm:w-11/12 md:w-3/4 lg:w-1/2 xl:w-1/2 mb-7">
+            <div class="slide relative h-90% mx-auto" style="align-items: center;">
+                <img class=" object-cover w-full h-full" src="./assets/images/pizza.png">
+                <div class="m-2 p-2 absolute bottom-0 w-full uppercase  bg-black/40 font-bold text-center text-white">
+                    Italian Pizza</div>
+            </div>
 
+            <div class="slide relative h-90% mx-auto" style="align-items: center;">
+                <img class=" object-cover w-full h-full" src="./assets/images/pasta.png">
+                <div class="m-2 p-2 absolute bottom-0 w-full uppercase bg-black/40 font-bold text-center text-white">
+                    Italian Pasta</div>
+            </div>
+
+            <div class="slide relative h-90% mx-auto" style="align-items: center;">
+                <img class=" object-cover w-full h-full" src="./assets/images/italian.png">
+                <div class=" m-2 p-2 absolute bottom-0 w-full uppercase font-bold bg-black/40 text-center text-white">
+                    Italian Cuisine</div>
+            </div>
+
+            <!-- The previous button -->
+            <a class="absolute left-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
+                onclick="moveSlide(-1)">❮</a>
+
+            <!-- The next button -->
+            <a class="absolute right-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
+                onclick="moveSlide(1)">❯</a>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center justify-between p-4 bg-neutral-800">
+            <div class="w-1/2 m-2.5">
+                <img src="./assets/images/restorant.jpg" class="" />
+            </div>
+
+            <div class=" w-1/2 mx-3.5">
+                <h2 class="text-2xl mb-5 text-white font-bold text-center uppercase sm: mt-2">Wellcome to our pizza bar</h2>
+                <p class="text-white">A place where every bite is a taste of Italy! Our menu features a delicious
+                    selection of authentic Italian pizzas and pastas, made with the freshest ingredients. Come dine with
+                    us and indulge in the rich flavors and aromas of the old country. Buon appetito!</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center justify-between p-4 bg-neutral-800">
+            <div class=" w-1/2 mx-3.5">
+                <h2 class="tittle text-2xl mb-5 font-bold text-center uppercase" style="color: rgba(131, 133, 26, 1);">A unique taste of Italian pizza</h2>
+                <p class="text-white">A Unique Italian Pizza Experience - Indulge in the rich flavors and aromas of Italy with every bite. Our menu features authentic, fresh-ingredient pizzas and pastas for a truly one-of-a-kind dining experience.</p>
+            </div>
+            <div class="w-1/2 m-2.5">
+                <img src="./assets/images/pizzadought.jpg" class="" />
+            </div>
+        </div>
+
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+    <script src="./app.js"></script>
 
 </body>
 

@@ -4,3 +4,12 @@
 .tittle{
     color: rgba(131, 133, 26, 1);
 }
+
+span {
+    color: rgba(131, 133, 26, 1) !important;
+}
+
+.send-button{
+    background-color:rgba(131, 133, 26, 1) !important;
+}
+
